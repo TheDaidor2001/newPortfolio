@@ -3,9 +3,6 @@ import { Inter } from "next/font/google";
 // import { Bebas_Neue } from "@next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
-// const bebas = Bebas_Neue({ subsets: ["latin-ext"], weight: ["400"] });
-
 export const metadata: Metadata = {
   title: "Daniel Castillo PortFolio",
   description: "Daniel castillo, Front-End developer ",

@@ -10,7 +10,7 @@ const bebas = Bebas_Neue({
 
 const MarqueeComponent = () => {
   return (
-    <Marquee className={bebas.className}>
+    <Marquee className={bebas.className} speed={100}>
       <div className="flex items-center text-5xl lg:text-6xl xl:text-8xl font-bold text-white m-auto">
         *
       </div>

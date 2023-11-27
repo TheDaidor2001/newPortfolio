@@ -5,6 +5,7 @@ import Github from "@/components/icons/Github";
 import Linkedin from "@/components/icons/Linkedin";
 import Cv from "@/components/icons/Cv";
 import MarqueeComponent from "@/components/Marquee";
+import Proyects from "@/components/Proyects";
 
 const bebas = Bebas_Neue({
   subsets: ["latin"],
@@ -68,7 +69,7 @@ export default function Home() {
           className=" bg-secondary-color flex flex-col lg:flex-row mt-10 rounded-3xl px-0 lg:px-28 h-52 gap-5 items-center justify-center"
           id="about_me"
         >
-          <p className="lg:rotate-90 text-xl lg:text-2xl font-bold text-center text-gray-950 uppercase">
+          <p className="lg:-rotate-90 text-xl lg:text-2xl font-bold text-center text-gray-950 uppercase">
             Sobre mi
           </p>
           <h2
@@ -115,7 +116,7 @@ export default function Home() {
               Graduado en el Instituo IES Valle del Cidacos enfocado en la
               informática y programación.
             </p>
-            <span className="text-white font-bold text-xl group-hover:bg-white group-hover:rounded-3xl group-hover:px-5 group-hover:py-1 group-hover:text-gray-950">
+            <span className="text-white font-bold text-lg xl:text-xl group-hover:bg-white group-hover:rounded-3xl group-hover:px-5 group-hover:py-1 group-hover:text-gray-950">
               Desde 2005 hasta 2017
             </span>
           </article>
@@ -129,15 +130,31 @@ export default function Home() {
               Graduado en el centro profesional Nostradmus como técnico en
               Sistemas informáticos y Redes.
             </p>
-            <span className="text-white font-bold text-xl group-hover:bg-secondary-color group-hover:rounded-3xl group-hover:px-5 group-hover:py-1 group-hover:text-gray-950">
+            <span className="text-white font-bold text-lg xl:text-xl group-hover:bg-secondary-color group-hover:rounded-3xl group-hover:px-5 group-hover:py-1 group-hover:text-gray-950">
               Desde 2019 hasta 2021
             </span>
           </article>
         </section>
       </div>
-      <section className="mt-14">
+      <section className="mt-14 py-10">
         <MarqueeComponent />
       </section>
+      <div className="max-w-[1350px] mx-auto">
+        <section className="mt-5">
+          <p className="text-4xl text-center text-white font-bold">Proyectos</p>
+          <h2
+            className={`${bebas.className} text-center text-secondary-color text-8xl mt-5`}
+          >
+            Grandes Proyectos, Grandes enseñanzas
+          </h2>
+
+          <div className="space-y-10">
+            <Proyects />
+            <Proyects />
+            <Proyects />
+          </div>
+        </section>
+      </div>
     </>
   );
 }
